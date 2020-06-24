@@ -1,0 +1,500 @@
+  172  git commit -m "Added i.txt"
+  173  git log --oneline
+  174  git checkout latestrelease
+  175  git checkout rel5.0
+  176  git checkout latestrelease
+  177  git checkout master
+  178  git history'
+  179  git history
+  180  history
+  181  git tag -n
+  182  git log --oneline
+  183  git tag -d rel5.0
+  184  git tag -n
+  185  git log --oneline
+  186  git tag -d latestrelease
+  187  git log --oneline
+  188  git checkout f4e0f98
+  189  git tag prodrel -m "Tagging prod release"
+  190  git log --oneline
+  191  git checkout master
+  192  git log --oneline
+  193  git tag latestrel -m "tagging latestrel"
+  194  git log --oneline
+  195  git checkout prodrel
+  196  ls -ltr
+  197  vi d.txt
+  198  git status
+  199  git switch -c bugfix
+  200  git status
+  201  git add d.txt
+  202  git commit -m "Bugfix commited for d.txt"
+  203  git log --oneline
+  204  vi d.txt
+  205  git add d.txt
+  206  git commit -m "fixed all issues"
+  207  git log --oneline
+  208  git branch
+  209  git checkout master
+  210  git branch
+  211  git checkout bugfix
+  212  ls -ltr
+  213  touch x.txt
+  214  git log --oneline
+  215  git status
+  216  git add x.txt
+  217  git commit -m "added x.txt"
+  218  git log --oneline
+  219  git log --oneline --all
+  220  git log --oneline --all -graph
+  221  git log --oneline --all --graph
+  222  git checkout master
+  223  touch y.txt
+  224  git add y.txt
+  225  git commit -m "added y.txt"
+  226  git log --oneline --all --graph
+  227  git checkout e62fc6f
+  228  git brach oldrel
+  229  git branch oldrel
+  230  git branch
+  231  git checkout oldrel
+  232  vi c.txt
+  233  git add c.txt
+  234  git commit -m "Added line to c.txt"
+  235  git log --oneline
+  236  git log --oneline --all --graph
+  237  git checkout 4dd12eb
+  238  git checkout -b toooldrel
+  239  vi ba.txt
+  240  git add ba.txt
+  241  git commit -m "Added line to ba.txt"
+  242  git log --oneline --all --graph
+  243  git checkout master
+  244  git branch
+  245  git log --oneline
+  246  git log --oneline --all
+  247  git log --oneline --all --graph
+  248  git merge bugfix
+  249  git log --oneline --all --graph
+  250  cat b.txt
+  251  cat c.txt
+  252  cat d.txt
+  253  git checkout toooldrel
+  254  git checkout -b toooldrelbugfix
+  255  vi b.txt
+  256  git add b.txt
+  257  git commit -m "Added bugfix"
+  258  git log --oneline --all --graph
+  259  history
+  260  cd ..
+  261  history > a.txt
+  262  clear
+  263  git status
+  264  cd gitproject/
+  265  git status
+  266  git log --oneline
+  267  git log --oneline --all
+  268  git branch
+  269  git log --oneline --all --graph
+  270  ls -ltr
+  271  git checkout -b testmerge
+  272  vi h.txt
+  273  git add .
+  274  git commit -m "Added thrid line to h.txt"
+  275  git log --oneline
+  276  cat h.txt
+  277  git checkout master
+  278  cat h.txt
+  279  git merge testmerge
+  280  cat h.txt
+  281  git checkout testmerge
+  282  vi h.txt
+  283  git add .
+  284  git commit -m "Added fourth line in h.txt from testmerge"
+  285  cat h.txt
+  286  git checkout master
+  287  cat h.txt
+  288  vi h.txt
+  289  git add .
+  290  git commit -m "Added fourth line in h.txt from master branch"
+  291  git merge testmerge
+  292  git status
+  293  git merge --abort
+  294  git merge testmerge
+  295  vi h.txt
+  296  git add h.txt
+  297  git commit -m "Resolved conflict with master and testmerge"
+  298  clear
+  299  git log --oneline
+  300  git checkout -b somefeature
+  301  vi i.txt
+  302  git add .
+  303  git commit -m "Added firstline to i.txt"
+  304  git log --oneline
+  305  vi i.txt
+  306  git add i.txt
+  307  git commit -m "Added second line to i.txt"
+  308  git log --oneline
+  309  git checkout master
+  310  git merge somefeature
+  311  git log --oneline
+  312  git checkout somefeature
+  313  vi i.txt
+  314  git add .
+  315  git commit -m "added 3rd line to i.txt"
+  316  git log --oneline
+  317  vi i.txt
+  318  git add .
+  319  git commit -m "Added 4th line to i.txt"
+  320  git log --oneline
+  321  git checkout master
+  322  vi e.txt
+  323  git add .
+  324  git commit -m "Added first line to e.txt"
+  325  git log --oneline
+  326  git log --oneline --all
+  327  git log --oneline --all --graph
+  328  git log --oneline
+  329  git log --oneline --all -5
+  330  git log --oneline --all -5 --graph
+  331  git merge somefeature
+  332  git log --oneline --all -5 --graph
+  333  git log --oneline --all
+  334  git log --oneline --all --graph
+  335  git branch -d bugfix
+  336  git log --oneline --all --graph
+  337  git branch -d oldrel
+  338  git branch -D oldrel
+  339  git log --oneline --all --graph
+  340  history
+  341  clear 
+  342  git status
+  343  git log --oneline
+  344  clear
+  345  cat b.txt
+  346  vi b.txt
+  347  git status
+  348  git log --oneline -5
+  349  git checkout 10ce449
+  350  git checkout master
+  351  git status
+  352  git add b.txt
+  353  git checkout master
+  354  git checkout 10ce449
+  355  ls -ltr
+  356  git status
+  357  cat b.txt
+  358  git checkout master
+  359  git log --oneline
+  360  git checkout 306c20a
+  361  git checkout 10ce449
+  362  ls -ltr
+  363  cat b.txt
+  364  git checkout master
+  365  git log --oneline
+  366  git status
+  367  git restore --staged b.txt
+  368  git status
+  369  git restore b.txt
+  370  git status
+  371  touch j.txt
+  372  git add j.txt
+  373  git commit -m "Created j.txt"
+  374  git log --oneline
+  375  vi j.txt
+  376  git add j.txt
+  377  git status
+  378  git log --oneline
+  379  git checkout 8fe2460
+  380  git checkout 9fcdc93
+  381  git status
+  382  git restore --staged j.txt
+  383  git status
+  384  git restore j.txt
+  385  git status
+  386  cat j.txt
+  387  touch k.txt
+  388  git add k.txt
+  389  git commit -m "Added k.txt"
+  390  git status
+  391  git log --oneline
+  392  vi j.txt
+  393  git add j.txt
+  394  git status
+  395  git log --oneline
+  396  git checkout 1ba1026
+  397  git checkout master
+  398  git checkout 9fcdc93
+  399  git stash
+  400  git status
+  401  git stash --list
+  402  git stash list
+  403  git stash pop
+  404  git status
+  405  git stash
+  406  git status
+  407  git status list
+  408  git stash list
+  409   git checkout 9fcdc93
+  410  git checkout master
+  411  git stash pop
+  412   git checkout 9fcdc93
+  413  git stash
+  414  git stash list
+  415  ls -ltr
+  416  vi k.txt
+  417  git log --oneline
+  418  git checkout 9fcdc93
+  419  git stash list
+  420  git stash 
+  421  git stash list
+  422  git stash pop
+  423  git status
+  424  git stash save "K.txt change"
+  425  git stash
+  426  git stash list
+  427  git stash pop
+  428  git stash list
+  429  git stash save "K.txt change"
+  430  git stash list
+  431  git stash pop stash@{1}
+  432  git status
+  433  git stash list
+  434  git stash save "J.txt change"
+  435  git stash list
+  436  git stash apply
+  437  git stash list
+  438  git status
+  439  git stash save "j.txt change again"
+  440  git stash list
+  441  git stash drop stash@{0}
+  442  git statsh list
+  443  git stash list
+  444  git stash branch newb
+  445  git stash list
+  446  git stash
+  447  git stash list
+  448  git stash pop
+  449  git stash save "j.txt change in newb"
+  450  git stash list
+  451  git log --oneline
+  452  git checkout 306c20a
+  453  git stash list
+  454  git stash pop
+  455  ls -ltr
+  456  git stash list
+  457  git status
+  458  git stash save "add in first commit"
+  459  git status
+  460  git stash list
+  461  git status
+  462  git rm j.txt
+  463  git status
+  464  git checkout master
+  465  git stash list
+  466  git sash pop
+  467  git stash pop
+  468  git stash pop
+  469  git restore j.txt k.txt
+  470  git status
+  471  git stash list
+  472  cd ..
+  473  git clone https://github.com/MythMithun/DevOps107US.git
+  474  cd DevOps107US/
+  475  ls -ltr
+  476  cat a.txt
+  477  vi a.txt
+  478  git status
+  479  git add a.txt
+  480  git commit -m "Added second line to a.txt"
+  481  git log --oneline
+  482  git push
+  483  ls -pltr
+  484  cd ..
+  485  exit
+  486  c:
+  487  ls
+  488  pwd
+  489  cd ../..
+  490  dir
+  491  cd maven
+  492  cd bin
+  493  ls -ltr
+  494  mvn -version
+  495  mvn --version
+  496  mvn.cm --version
+  497  mvn.cmd --version
+  498  mvn
+  499  exit
+  500  cd desktop
+  501  cd DevOps107US/
+  502  git status
+  503  git log --oneline
+  504  cat a.txt
+  505  git pull
+  506  cat a.txt
+  507  cat a.txt
+  508  git pull
+  509  cat a.txt
+  510  vi a.txt
+  511  git add a.txt
+  512  git commit -m "Mithuns update"
+  513  cat a.txt
+  514  git push
+  515  vi a.txt
+  516  git add a.txt
+  517  git commit -m "Team update"
+  518  git push
+  519  git log --oneline
+  520  git status
+  521  git log --oneline
+  522  git fetch
+  523  cat a.txt
+  524  git log --oneline
+  525  git log --oneline --all
+  526  cat a.txt
+  527  git fetch origin
+  528  cat a.txt
+  529  git pull
+  530  cat a.txt
+  531  git log --oneline
+  532  cd ..
+  533  git status
+  534  cd DevOps107US/
+  535  ls -ltr
+  536  git status
+  537  git log --oneline
+  538  git branch
+  539  git branch -a
+  540  git log --oneline
+  541  git pull 
+  542  git branch 
+  543  git branch -a
+  544  git log --oneline --all
+  545  cd ..
+  546  cd gitproject
+  547  git log --oneline
+  548  git remote add origin https://github.com/MythMithun/gitproject107us.git
+  549  git push -u origin master
+  550  git remote
+  551  git remote -v
+  552  git remote add origin https://github.com/MythMithun/gitprojectduplicate.git
+  553  git remote add mithun https://github.com/MythMithun/gitprojectduplicate.git
+  554  git remote -v
+  555  git remote
+  556  git push -u mithun master
+  557  git log --oneline
+  558  touch l.txt
+  559  git add l.txt
+  560  git commit -m "Added l.txt"
+  561  git log --oneline -5
+  562  git push mithun master
+  563  git push origin master
+  564  cd ..
+  565  git clone https://github.com/MythMithun/snake.git
+  566  git status
+  567  cd snake
+  568  git status
+  569  git add .
+  570  git commit -m "Changed color to red"
+  571  git remote -v
+  572  git push
+  573  cd ..
+  574  ls -ltr
+  575  cd gitproject
+  576  ls -ltr
+  577  git remote -v
+  578  git remote -r mithun
+  579  git remote remove mithun
+  580  git remote -v
+  581  git remote remove origin
+  582  git remote -v
+  583  git push
+  584  cd ..
+  585  cd gitproject
+  586  ls -ltr
+  587  git log --oneline --graph --all
+  588  cd ..
+  589  mkdir mergemaster
+  590  cd mergemaster
+  591  touch A
+  592  ls -ltr
+  593  git add A
+  594  git init
+  595  git add A
+  596  git commit -m "A"
+  597  git log --oneline
+  598  touch B
+  599  git add B
+  600  git commit -m "B"
+  601  git log --oneline
+  602  touch C
+  603  git add C
+  604  git commit -m "C"
+  605  git log --oneline
+  606  git checkout 1b7be37
+  607  git switch -c test
+  608  touch D
+  609  git add D
+  610  git commit -m "D"
+  611  git log --oneline
+  612  touch E
+  613  git add E
+  614  git commit -m "E"
+  615  git log --oneline
+  616  ls -ltr
+  617  git checkout master
+  618  ls -ltr
+  619  git log --oneline 
+  620  git log --oneline --all --graph
+  621  git checkout test
+  622  git merge master
+  623  ls -ltr
+  624  git log --oneline
+  625  git log --oneline --all --graph
+  626  cd ..
+  627  cd gitproject
+  628  ls -ltr
+  629  ls -ltr | wc -l
+  630  git log --oneline
+  631  git rebase -i HEAD~4
+  632  git log --oneline
+  633  git rebase -i HEAD~4
+  634  git log --oneline
+  635  ls -ltr
+  636  ls -ltr | wc -l
+  637  git rebase -i HEAD~10
+  638  vi h.txt
+  639  git rebase --continue
+  640  git log --oneline
+  641  git status
+  642  git add h.txt
+  643  git commit -m "Resolved conflict"
+  644  git rebase --continue
+  645  git log --oneline
+  646  git format-patch -1
+  647  cat y.txt
+  648  ls -ltr
+  649  rm -rf 0001-added-y.txt.patch
+  650  ls -ltr
+  651  git status
+  652  vi y.txt
+  653  git add y.txt
+  654  git commit -m "Added line to y.txt"
+  655  git format-patch -1
+  656  git format-patch -2
+  657  rm 0001-added-y.txt.patch 0002-Added-line-to-y.txt.patch
+  658  cat 0001-added-y.txt.patch
+  659  git format-patch -2
+  660  cat 0001-added-y.txt.patch
+  661  ls -ltr
+  662  rm -rf 0001-Added-line-to-y.txt.patch 0002-Added-line-to-y.txt.patch 0001-added-y.txt.patch
+  663  ls -ltr
+  664  touch mithun.txt
+  665  vi mithun.txt
+  666  git add .
+  667  git commit -m "Created m.txt"
+  668  git log --oneline
+  669  git format-patch -1
+  670  cd ..
+  671  history > allcommands.txt
